@@ -19,7 +19,6 @@ import java.util.Collections;
 @Entity
 
 public class AppUser implements UserDetails {
-
      @SequenceGenerator(
             name = "student_sequence",
             sequenceName = "student_sequence",
@@ -31,6 +30,7 @@ public class AppUser implements UserDetails {
             strategy = GenerationType.SEQUENCE,
             generator =  "student_sequence"
     )
+
     private Long id;
     private String name;
     private String username;
